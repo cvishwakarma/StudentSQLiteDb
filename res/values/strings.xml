@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">StudentSQLiteDB</string>
+    <string name="action_settings">Help</string>
+
+    <!-- LABELS DETAIL VIEW -->
+    <string name="id_label">ID :</string>
+    <string name="name_label">Full Name :</string>
+    <string name="rollnumber_label">Roll Number :</string>
+    <string name="fathername_label">Father Name :</string>
+    <string name="phone_label">Phone :</string>
+    <string name="email_label">E-mail :</string>
+    <string name="menu_new_student">Add new Student</string>
+    <string name="menu_settings">Settings</string>
+    <string name="student_name">Student Details</string>
+    <!-- REMOVE STUDENT -->
+    <string name="removed_successfully"> has been removed successfully.</string>
+    <string name="remove_student">Remove Student</string>
+    <string name="remove">Remove</string>
+    <string name="remove_confirm_message">Are you sure you want to remove </string>
+    <string name="mail_to">cvishwakarma1995@gmail.com</string>
+    <!-- ADD STUDENT VIEW -->
+    <string name="add_student">Add Student</string>
+    <string name="cancel">Cancel</string>
+    <string name="added_student">Added Student</string>
+    <string name="added_student_msg">was added successfully.</string>
+    <string name="not_added_student_msg">was not added successfully.</string>
+    <string name="not_update_student_msg">was not updated successfully.</string>
+    <string name="ok">OK</string>
+    <string name="update_student">Update Student</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="upated_successfully">Student has been updated successfully.</string>
+    <string name="updated_fail">Updating process failed.</string>
+    <string name="no_student">No Students Found</string>
+    <string name="imageview_description">Student Thumbnail</string>
+    <string name="no_student_selected">No Student Selected</string>
+
+    <string name="id">ID</string>
+    <string name="rollnumber">Roll Number</string>
+    <string name="name">Name</string>
+    <string name="fathername">Father name</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Phone Number</string>
+
+
+    <string name="title_activity_student_record">Students Record</string>
+    <string name="title_activity_student_create">Create Student</string>
+    <string name="title_activity_student_update">Update Student</string>
+    <string name="title_activity_student_detail">Student Detail</string>
+
+
+
+
+</resources>

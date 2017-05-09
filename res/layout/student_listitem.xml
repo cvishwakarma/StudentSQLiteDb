@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:dividerPadding="2dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:showDividers="middle" >
+
+   <QuickContactBadge
+       android:id="@android:id/icon"
+       style="@style/quickStudentBadgeStyle"
+       android:layout_width="?android:attr/listPreferredItemHeight"
+       android:layout_height="?android:attr/listPreferredItemHeight"
+       android:padding="5dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/student_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llyt2" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textview_studentlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/textview_studentlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/email"
+            android:text="@string/email"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/textview_studentlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="9dp"
+            android:drawableStart="@drawable/phone"
+            android:text="@string/phone" />
+
+    </LinearLayout>
+
+</LinearLayout>

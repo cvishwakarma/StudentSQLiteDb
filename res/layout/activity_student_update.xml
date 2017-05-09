@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csnetsoft.view.studentsqlitedb.StudentUpdate">
+
+    <LinearLayout
+        android:id="@+id/llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/create_title_space"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/update_student_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:padding="8sp"
+            android:text="@string/update_student"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_title_space2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10sp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrlview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/llyt"
+        android:fillViewport="true"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            tools:context=".StudentUpdate" >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:id="@+id/update_etRollnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="5sp"
+                    android:hint="@string/rollnumber"
+                    android:inputType="textShortMessage" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <EditText
+                    android:id="@+id/update_etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <EditText
+                    android:id="@+id/update_etFatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="5sp"
+                    android:hint="@string/fathername"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:id="@+id/update_etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="5sp"
+                    android:hint="@string/phone"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <EditText
+                    android:id="@+id/update_etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:padding="5sp"
+                    android:hint="@string/email"
+                    android:inputType="textWebEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/update_btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="10sp"
+                android:background="@android:color/holo_red_dark"
+                android:drawableLeft="@android:drawable/ic_menu_save"
+                android:drawableStart="@android:drawable/ic_menu_save"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

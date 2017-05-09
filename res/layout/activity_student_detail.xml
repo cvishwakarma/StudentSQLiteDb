@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csnetsoft.view.studentsqlitedb.StudentDetail">
+
+    <LinearLayout
+        android:id="@+id/llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/create_title_space"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_detail_nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:padding="8sp"
+            android:text="@string/student_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_title_space2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10sp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrlview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/llyt"
+        android:padding="5dp" >
+
+        <!--  GENERAL LAYOUT -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <!-- STUDENT ICON -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/contact_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/imageborder"
+                    android:contentDescription="@string/imageview_description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner_student" />
+
+            </LinearLayout>
+
+            <!-- DETAILS LAYOUT -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                android:paddingTop="20dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/detail_label_id"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/id_label"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_id"
+                        style="@style/textview_studentdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/id"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/detail_label_rollnum"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/rollnumber_label"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_rollnum"
+                        style="@style/textview_studentdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rollnumber"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/detail_label_name"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/name_label"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_name"
+                        style="@style/textview_studentdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/detail_label_fathername"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/fathername_label"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_fathername"
+                        style="@style/textview_studentdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fathername"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/detail_label_email"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/email_label"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_email"
+                        style="@style/textview_studentdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/detail_label_phome"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/phone_label"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_phone"
+                        style="@style/textview_studentdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- DETAILS LAYOUT END -->
+
+        </LinearLayout>
+
+        <!--  GENERAL LAYOUT END -->
+    </ScrollView>
+</RelativeLayout>
